@@ -1,0 +1,291 @@
+/* ---------------------body_css----------------------- */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*================================Home_page_css=========================*/
+/*-----------------------------heading_css----------------------*/
+
+
+
+.site-header{
+    background-color: rgb(246, 161, 58);
+    font-size: 20px;
+    
+}
+.site-header img{
+    margin-top: 10px;
+    height: 190px;
+    width:300px;
+}
+
+.address{
+    text-align: center;
+    
+}
+h4{
+    text-align: center;
+    margin-top: 50p;
+}
+
+/*--------------------------------------navigation_bar_css---------------------------*/
+ .menu{
+    height: 50px;
+    width:100%;
+    background-color: rgb(251, 98, 43);  
+}
+.menu ul {
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.menu ul li{
+    font-size: 24px;
+    list-style: none;   
+}
+.menu ul li:hover{
+    background-color: rgb(218, 59, 1);
+    
+    transition: 0.5s all ease;
+}
+.menu ul li a{
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.menubar{
+ 
+    display:block;
+}
+.menubar ul li a{
+    text-decoration: none;
+} 
+
+
+/*-------------------Image_galary_css--------------------------*/
+.image-container{
+    background-color:rgb(246, 161, 58);
+}
+
+.image-container img{
+    height:200px;
+    width:210px;
+    
+    border: 2px solid black;
+    margin-left: 10px ;
+    margin-top: 10px;
+    padding:10px 10px 10px 10px;
+}
+
+/*----------------------social_media_css----------------*/
+#home-quote{
+    background-color: rgb(251, 98, 43);
+    height:50px;
+    width:100%;
+
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/*==========================About_Us_CSS=========================*/
+.about{
+    background-color: whitesmoke;
+}
+.about #about-image{
+    padding: 10px 20px 10px 20px;
+}
+.about p{
+    padding:15px 25px 15px 25px;
+    text-align: justify;
+    font-size:20px;
+}
+.about h2{
+    text-align:center;
+    background:rgb(191, 190, 190)
+}
+.about h3{
+    text-align: center;
+}
+
+.about ul li{
+     padding: 10px 10px 10px 10px;
+     font-size: 20px;
+}
+
+/* ========================Infrastructure_CSS==================*/
+
+.infrastructure {
+    background-color: whitesmoke;
+    font-size: 20px;    
+}
+.infrastructure p{
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+}
+.infrastructure h2{
+    background-color: rgb(191, 190, 190);
+    text-align: center;
+}
+.infrastructure h3{
+    color:orangered;
+    text-align: center;
+}
+
+.infra img{
+    height:200px;
+    width:320px;
+    
+    border: 2px solid black;
+    margin-left: 10px ;
+    margin-top: 10px;
+    padding:10px 10px 10px 10px;
+}
+
+
+
+
+
+
+/*================== Contact_Us_CSS============================*/
+
+.contact{
+    height: 550px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.contact h2{
+    background-color: rgb(191, 190, 190);
+    text-align: center;
+}
+.contact h3{
+    color: orange;
+    
+}
+.contact h1{
+    color:orangered;
+    padding-left: 10px;
+}
+.contact address{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+
+
+.contact .parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact #location{
+    margin:60px 40px 10px 40px;
+    border:2px solid black;
+}
+#location h3{
+    text-align: center;
+}
+/*==========================footer_css===================*/
+footer{
+    background-color: rgb(246, 161, 58);
+    height: 50px;
+    width:100%;
+}
+.footer{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.footer a{
+    margin-right:10px;
+}
+
+footer #foot{
+    text-align: center;
+}
+
+
+
+/*---------==========---------====Home_responsiveness===------------*/
+@media(max-width:940px){
+    .image-container img{
+        height: 100px;
+        width:100px;
+        padding: 5px 5px 5px 5px;
+    }
+    nav ul li{
+        font-size: 14px;
+        padding-top:10px;
+        list-style: none;
+        
+    }
+    .site-header img{
+        margin-top: 10px;
+        height: 160px;
+        width:270px;
+    }
+    .site-header{
+        font-size: 15px;
+    }
+
+    .menu ul li{
+        font-size:14px;
+        
+        align-items: center;
+        border-bottom:2px solid black;
+    }
+    .home address{
+        font-size: 14px;
+    }
+    #home-quote{
+    
+        font-size: 16px;
+        display: flex;
+        text-align: center;
+        
+    }
+
+    /* =============about_css=================*/
+    
+    .about #about-image{
+         padding: 10px 20px 10px 20px;
+         width:358px;
+         height: 226px;
+        }
+        
+        /*===========================Infrastructure=========================*/
+        .infra img{
+            height:100px;
+            width:160px;
+            
+            border: 2px solid black;
+            margin-left: 10px ;
+            margin-top: 10px;
+            padding:10px 10px 10px 10px;
+        }
+        .infrastructure p{
+            padding:10px 20px 10px 20px;
+            font-size: 18px;
+        }
+     /*=================contact_CSS==============*/
+     .contact .parent{
+        display:block;
+     }   
+     .contact #location iframe{
+        height:200px;
+        width:275px
+     }
+     .contact h3{
+        font-size: 20px;
+        
+    }
+
+}
